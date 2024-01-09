@@ -11,13 +11,14 @@ alert (`Get ready to board the mothership`);
 
 let ready = prompt(`Are you excited? Y or N`)
 ready = ready.toUpperCase();
-if (ready == 'Y') {
+
+if (ready.startsWith('Y')) {
     alert("I knew you'd say that. It's so cool that you're going to Mars!")
-} else if (ready == 'N') {
+} else if (ready.startsWith('N')) {
     alert('well it is too late to back out now')
 }
 //else {
- //   alert("you need to put a Y or N dummy, let's go no time to waste")
+//   alert("you need to put a Y or N dummy, let's go no time to waste")
 //};
 
 alert("It's time to pack for your trip to Mars.");
